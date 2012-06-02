@@ -2,9 +2,9 @@
 
 Knowing how to use [Pygame]'s various [sprite classes] is essential to getting good and efficient results when working on Pygame games.
 
-Every computer game is made out of a loop that's constantly re-validating the input and the game data and refreshing the display accordingly. In fact, whenever I read the source code for a game I'm surprised by how much tasks gets done on each iteration, that is, dozens of times per second.
+Every computer game is made out of a loop that's constantly re-validating the input and the game data and refreshing the display accordingly. In fact, whenever I read the source code for a game I'm surprised by how many tasks get done on each iteration, that is, dozens of times per second.
 
-You can imaging that drawing things on the screen is one of the heavier tasks, and that's where `DirtySprite` comes in. By using it instead of a regular `Sprite` object, you can keep track on what parts of the screen need a refresh and what don't, and in turn, your game renders in a smarter and more efficient way.
+You can imagine that drawing things on the screen is one of the heavier tasks, and that's where `DirtySprite` comes in. By using it instead of a regular `Sprite` object, you can keep track on what parts of the screen need a refresh and what don't, and in turn, your game renders in a smarter and more efficient way.
 
 In this short tutorial, I will show you a very basic use case for `DirtySprite` and how I implemented it in an existing game source.
 
